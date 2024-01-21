@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Container, Stack } from "@mui/material";
+import Sidebar from "./Components/Sidebar";
+import Rightbar from "./Components/Rightbar";
+import Navbar from "./Components/Navbar";
+import Feed from "./Components/Feed";
+import Button1 from "./Components/CustomButton";
+import Login from "./Components/Login";
+import ResetPassword from "./Pages/ResetPassword";
+import CustomButton from "./Components/CustomButton";
+import LandingPage from "./Pages/LandingPage";
+import Footer from "./Components/Footer";
+
+// import Shop from './Pages/Shop';
+// import Sell from './Pages/Sell';
+// import Borrow from './Pages/Borrow';
+// import Learn from './Pages/Learn';
+// import Protect from './Pages/Protect';
+// import Join from './Pages/Join';
+// import {BrowserRouter as Route, Router  } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+ <Box >
+  
+  <Navbar/>
+  <LandingPage/>
+{/* <Footer/> */}
+ </Box>
+    
+    
+  
   );
 }
 
